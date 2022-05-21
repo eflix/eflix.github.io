@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV Alda Media</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <style type="text/css">
+    /* (A) OUTER CONTAINER */
+.hwrap {
+  /* (A1) DIMENSIONS */
+  width: 100%;
+  height: 150px; /* OPTIONAL */
+
+  /* (A2) COSMETICS */
+  background: #fffdea;
+  border: 2px solid #ffcf1f;
+  overflow: hidden; /* HIDE SCROLLBARS */
+}
+
+/* (B) MIDDLE CONTAINER - FLEX LAYOUT */
+.hmove {
+  display: flex;
+  position: relative;
+  top: 0; right: 0;
+}
+
+/* (C) SLIDES - FORCE INTO ONE LONG HORIZONTAL ROW */
+.hslide {
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  /*background-color: red;*/
+}
+
+/* (D) SLIDE ANIMATION */
+@keyframes slideh {
+  0% { right: 0; }
+  30% { right: 0; }
+  33% { right: 100%; }
+  63% { right: 100%; }
+  66% { right: 200%; }
+  97% { right: 200%; }
+  100% { right: 0; }
+}
+.hmove { animation: slideh linear 9s infinite; }
+.hmove:hover { animation-play-state: paused; }
+
+  </style>
+
+</head>
+<body>
+	<!-- navbar -->
+      <nav class="navbar-inverse navbar-fixed-top bg-transparent">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+          </button>
+            <a id="home" href="#home" class="navbar-brand page-scroll">Home</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about" class="page-scroll about">About</a></li>
+              <li><a href="#skills" class="page-scroll">Skills</a></li>
+              <li><a href="#portfolio" class="page-scroll" >Portfolio</a></li>
+              <li><a href="#contact" class="page-scroll">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    <!-- akhir navbar -->
+
+     <!-- jumbotron -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Alda Media</h1>
+        <div class="hmove">
+          <div class="hslide">
+            <h3>Web Design</h3>
+            <p>The episode orbits? The panic overwhelms a fuse. The major lurks below the shower!</p>
+          </div>
+          <div class="hslide">
+            <h3>Web Developer</h3>
+            <p>The lasting astronomer balances the counter reminder. The trap hires the paradox.</p>
+          </div>
+          <div class="hslide">
+            <h3>Mahasiswa</h3>
+            <p>Her birthday calculates past a juice! The envy succeeds across an evident jelly.</p>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- akhir jumbotron -->
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center">About</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+         <div class="col-sm-6">
+          <div>
+            <h3>Hello I'm Alda Media</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div>
+            Umur  : 25 th
+            Email : 
+            Phone :
+            Alamat  :
+            Status  : 
+          </div>
+           
+         </div> 
+         <div class="col-sm-6">
+           <img src="img/bg.png" style="width: 100%; height: 100%;">
+         </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Akhir About -->
+
+
+<!-- <div class="hwrap"> -->
+  
+<!-- </div> -->
+
+<!-- <div class="jMove">
+          <div class="jSlide" style="background-color: red;">
+            <h3>Web Developer</h3>
+          </div>
+          <div class="jSlide" style="background-color: blue;">
+            <h3>Web Design</h3>
+          </div>
+          <div class="jSlide" style="background-color: green;">
+            <h3>Mahasiswa</h3>
+          </div>          
+        </div> -->
+
+    
+
+</body>
+</html>
